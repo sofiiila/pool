@@ -42,3 +42,5 @@ class RedisPool:
 
     def delete(self, key) -> None:
         self.redis.hdel(self.key, key)
+
+

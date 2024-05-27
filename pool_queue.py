@@ -23,6 +23,7 @@ class PoolQueue:
     """
     def __init__(self):
         self._pool = multiprocessing.Queue()
+        self._key_attr = key_attr
 
     @property
     def length(self):
